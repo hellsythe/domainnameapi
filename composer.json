@@ -1,5 +1,6 @@
 {
     "name": "hellsythe/domainnameapi",
+    "version": "0.1.0",
     "type": "library",
     "description": "Auxiliar para consumir API para revender dominios de domainnameapi.com",
     "keywords": ["domainnameapi", "domain reseller", "laravel"],
