@@ -1,0 +1,40 @@
+{
+    "name": "hellsythe/domainnameapi",
+    "type": "library",
+    "description": "Auxiliar para consumir API para revender dominios de domainnameapi.com",
+    "keywords": ["domainnameapi", "domain reseller", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Camilo Antonio Rodríguez Cruz",
+            "email": "hellsythex@gmail.com",
+            "homepage": "https://camilo-dev.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.40"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "files": [
+
+        ],
+        "psr-4": {
+            "Hellsythe\\DomainNameApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hellsythe\\DomainNameApi\\ServiceProvider"
+            ],
+            "aliases": {
+                "NameApi": "Hellsythe\\DomainNameApi\\Facade"
+            }
+        }
+    }
+}
