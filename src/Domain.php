@@ -46,7 +46,10 @@ class Domain extends Bind
     {
         $parse_domain = explode('.', $domain, 2);
 
-        $this->addTld($parse_domain[1]);
+        if ($parse_domain[1] ?? false) {
+            $this->addTld($parse_domain[1]);
+        }
+
         $this->addDomain($parse_domain[0]);
     }
 
