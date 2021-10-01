@@ -28,9 +28,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/domainnameapi.php', 'domainnameapi'
-        );
+        $this->publishes([
+            __DIR__ . '/../config/domainnameapi.php' => 'domainnameapi'
+        ]);
 
         $this->app->bind('nameapi',function(){
             return new NameApi();
