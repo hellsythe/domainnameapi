@@ -60,7 +60,7 @@ class Domain extends Bind
      * @param string  $action  accion a consultar puede ser create,renew,transfer,restore
      * @return array
      */
-    public function CheckAvailability(mixed $domain, int $years = 1, string $action = 'create') : array
+    public function checkAvailability(mixed $domain, int $years = 1, string $action = 'create') : array
     {
         if (is_array($domain)) {
             foreach ($domain as $value) {
