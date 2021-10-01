@@ -18,7 +18,11 @@ return [
         'com.mx',
         'net',
         'org',
+        'info',
+        'site',
+        'xyz',
     ],
+    'increase_price' => '35',
     'contact_info' => [
         'FirstName' => 'Camilo Antonio',
         'LastName' => 'Rodríguez Cruz',
