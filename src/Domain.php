@@ -46,7 +46,10 @@ class Domain extends Bind
     {
         $parse_domain = explode('.', $domain, 2);
 
-        $this->addTld($parse_domain[1]);
+        if ($parse_domain[1] ?? false) {
+            $this->addTld($parse_domain[1]);
+        }
+
         $this->addDomain($parse_domain[0]);
     }
 
@@ -57,7 +60,7 @@ class Domain extends Bind
      * @param string  $action  accion a consultar puede ser create,renew,transfer,restore
      * @return array
      */
-    public function CheckAvailability(mixed $domain, int $years = 1, string $action = 'create') : array
+    public function checkAvailability(mixed $domain, int $years = 1, string $action = 'create') : array
     {
         if (is_array($domain)) {
             foreach ($domain as $value) {

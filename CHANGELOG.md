@@ -1,5 +1,9 @@
 # Registro de cambios
 
+## [0.1.2] 2021-10-1
+### Corrección de errores
+- Se Solucionó el bug cuando el dominio no cuenta con tld.
+
 ## [0.1.1] 2021-10-1
 ### Corrección de errores
 - Se Solucionó el bug con php al usar mergeconfig.
