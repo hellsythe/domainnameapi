@@ -22,7 +22,7 @@ return [
         'site',
         'xyz',
     ],
-    'increase_price' => '35',
+    'profit' => env('DOMAINNAMEAPI_PROFIT', 30),
     'contact_info' => [
         'FirstName' => 'Camilo Antonio',
         'LastName' => 'Rodríguez Cruz',
